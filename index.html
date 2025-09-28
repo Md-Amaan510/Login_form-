@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>First WebPage</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+  <header>
+    <div class="head">
+      <img src="images/logo.png" alt="Logo">
+      <p class="h_item">
+        <a href="#">HOME</a>
+        <a href="#">CONTACT</a>
+        <a href="#">ABOUT</a>
+        <button class="LOG" type="button">LOGIN</button>
+      </p>
+    </div>
+  </header>
+
+  <!-- Hidden Wrapper -->
+  <div class="wrapper hidden">
+    <span class="cross">
+      <i class="fa-solid fa-xmark"></i>
+    </span>
+
+    <!-- Login Box -->
+    <div class="login">
+      <h2>Login</h2>
+      <form action="#">
+        <div class="inp_group">
+          <input type="email" required>
+          <label>Email</label>
+          <i class="fa-solid fa-envelope"></i>
+        </div>
+        <div class="inp_group">
+          <input type="password" required>
+          <label>Password</label>
+          <i class="fa-solid fa-lock"></i>
+        </div>
+        <p>
+          <label><input type="checkbox"> Remember me</label>
+          <a href="#">Forgot?</a>
+        </p>
+        <button id="btn" type="submit">Login</button>
+        <p>Don't have an account? <a href="#" class="register-link">Register</a></p>
+      </form>
+    </div>
+
+    <!-- Register Box -->
+    <div class="register">
+      <h2>Register</h2>
+      <form action="#">
+        <div class="inp_group">
+          <input type="text" required>
+          <label>Username</label>
+          <i class="fa-solid fa-user"></i>
+        </div>
+        <div class="inp_group">
+          <input type="email" required>
+          <label>Email</label>
+          <i class="fa-solid fa-envelope"></i>
+        </div>
+        <div class="inp_group">
+          <input type="password" required>
+          <label>Password</label>
+          <i class="fa-solid fa-lock"></i>
+        </div>
+        <p><label><input type="checkbox"> Accept terms and conditions</label></p>
+        <button id="btn" type="submit">Register</button>
+        <p>Already have an account? <a href="#" class="login-link">Login</a></p>
+      </form>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
